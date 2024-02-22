@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--title-->
   <title>foodpanda</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"></script>
   <!--css-->
   <link href="./css/style.css" rel="stylesheet">
   <!--tailwind-->
   <style>
-    path.rider-icon_path{
+    path.rider-icon_path {
       fill: #ffffff;
     }
   </style>
@@ -21,32 +23,411 @@
   <div class="navbar">
     <div class="top_nav bg-pink-600 text-white pt-2 py-2 py-1 h-16 reletive">
       <div class="banner_content flex px-8 justify-center items-center">
-        
-        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="svg-stroke-container inline h-12 mr8 min-w-12 relative w-12">
-          <path d="M44.66,9.09,31.19,5.18a4.66,4.66,0,0,0-2.59,0L11,10.13a4.62,4.62,0,0,0-3.37,4.36s0,0,0,.07v4C4.51,21.9.1,27.21,0,31.91A10.57,10.57,0,0,0,0,33a5,5,0,0,0,2.69,4.08,5.66,5.66,0,0,0,2.64.65,13.73,13.73,0,0,0,4.27-1,7.73,7.73,0,0,0,3.7,5.55A5.41,5.41,0,0,0,16,43a17.66,17.66,0,0,0,5.93-1.66l1.16.58a4.66,4.66,0,0,0,2.07.48,4.55,4.55,0,0,0,1.26-.17l18.16-5.91A4.62,4.62,0,0,0,48,31.87V13.51A4.64,4.64,0,0,0,44.66,9.09Zm-33.35,2,9-2.52,13.18,3.83A3.62,3.62,0,0,1,36,15.86v5L26.28,24V18.37a2.56,2.56,0,0,0-1.92-2.44L11.17,12.1a2.85,2.85,0,0,0-1.45,0A3.64,3.64,0,0,1,11.31,11.11ZM4.79,36a4,4,0,0,1-2.14-3.89c.17-2.62,2.47-5.88,5-8.82V33a2.53,2.53,0,0,0,1.52,2.29l.39.18c0,.1,0,.21,0,.32C7.84,36.31,6.09,36.61,4.79,36Zm16,4.75c-2,.66-4.14,1-5.61.37a4.89,4.89,0,0,1-3-4.48v0l4.23,2,4.58,2.13Zm2-.31-6-2.78-4.58-2.13s0-.08,0-.12c.91-4.8,6.24-12.14,9.08-15.16a1,1,0,0,0-.42-1.68l-1.21-.41a1,1,0,0,0-1.07.28c-1.78,1.95-7.92,9.28-8.92,15.48,0,.14-.06.28-.07.41l0,0A1.51,1.51,0,0,1,8.69,33V22.13c1.64-1.81,3.26-3.43,4.38-4.62a1,1,0,0,0-.43-1.68l-1.2-.41a1,1,0,0,0-1.08.28c-.36.4-.95,1-1.67,1.74v-3a1.5,1.5,0,0,1,.62-1.14A1.74,1.74,0,0,1,10.37,13a1.79,1.79,0,0,1,.51.07l13.19,3.83a1.55,1.55,0,0,1,1.17,1.46V39.08a1.48,1.48,0,0,1-.72,1.26A1.84,1.84,0,0,1,22.8,40.45ZM47,31.87a3.6,3.6,0,0,1-2.7,3.46L26.11,41.24a3.25,3.25,0,0,1-1.35.1,1.41,1.41,0,0,0,.31-.14,2.49,2.49,0,0,0,1.21-2.12v-5.5L47,27.11Zm0-14.5-9.89,3.16V15.86a4.64,4.64,0,0,0-3.34-4.42L22.12,8.06l6.76-1.91a3.77,3.77,0,0,1,1-.14,3.55,3.55,0,0,1,1,.15l13.47,3.92A3.59,3.59,0,0,1,47,13.51Z" class="rider-icon__path"></path>
-      </svg>
+
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+          class="svg-stroke-container inline h-12 mr8 min-w-12 relative w-12">
+          <path
+            d="M44.66,9.09,31.19,5.18a4.66,4.66,0,0,0-2.59,0L11,10.13a4.62,4.62,0,0,0-3.37,4.36s0,0,0,.07v4C4.51,21.9.1,27.21,0,31.91A10.57,10.57,0,0,0,0,33a5,5,0,0,0,2.69,4.08,5.66,5.66,0,0,0,2.64.65,13.73,13.73,0,0,0,4.27-1,7.73,7.73,0,0,0,3.7,5.55A5.41,5.41,0,0,0,16,43a17.66,17.66,0,0,0,5.93-1.66l1.16.58a4.66,4.66,0,0,0,2.07.48,4.55,4.55,0,0,0,1.26-.17l18.16-5.91A4.62,4.62,0,0,0,48,31.87V13.51A4.64,4.64,0,0,0,44.66,9.09Zm-33.35,2,9-2.52,13.18,3.83A3.62,3.62,0,0,1,36,15.86v5L26.28,24V18.37a2.56,2.56,0,0,0-1.92-2.44L11.17,12.1a2.85,2.85,0,0,0-1.45,0A3.64,3.64,0,0,1,11.31,11.11ZM4.79,36a4,4,0,0,1-2.14-3.89c.17-2.62,2.47-5.88,5-8.82V33a2.53,2.53,0,0,0,1.52,2.29l.39.18c0,.1,0,.21,0,.32C7.84,36.31,6.09,36.61,4.79,36Zm16,4.75c-2,.66-4.14,1-5.61.37a4.89,4.89,0,0,1-3-4.48v0l4.23,2,4.58,2.13Zm2-.31-6-2.78-4.58-2.13s0-.08,0-.12c.91-4.8,6.24-12.14,9.08-15.16a1,1,0,0,0-.42-1.68l-1.21-.41a1,1,0,0,0-1.07.28c-1.78,1.95-7.92,9.28-8.92,15.48,0,.14-.06.28-.07.41l0,0A1.51,1.51,0,0,1,8.69,33V22.13c1.64-1.81,3.26-3.43,4.38-4.62a1,1,0,0,0-.43-1.68l-1.2-.41a1,1,0,0,0-1.08.28c-.36.4-.95,1-1.67,1.74v-3a1.5,1.5,0,0,1,.62-1.14A1.74,1.74,0,0,1,10.37,13a1.79,1.79,0,0,1,.51.07l13.19,3.83a1.55,1.55,0,0,1,1.17,1.46V39.08a1.48,1.48,0,0,1-.72,1.26A1.84,1.84,0,0,1,22.8,40.45ZM47,31.87a3.6,3.6,0,0,1-2.7,3.46L26.11,41.24a3.25,3.25,0,0,1-1.35.1,1.41,1.41,0,0,0,.31-.14,2.49,2.49,0,0,0,1.21-2.12v-5.5L47,27.11Zm0-14.5-9.89,3.16V15.86a4.64,4.64,0,0,0-3.34-4.42L22.12,8.06l6.76-1.91a3.77,3.77,0,0,1,1-.14,3.55,3.55,0,0,1,1,.15l13.47,3.92A3.59,3.59,0,0,1,47,13.51Z"
+            class="rider-icon__path"></path>
+        </svg>
 
         <div class="text mr-7 text-lg">Do you need a business account?</div>
-        <button type="button" class="button-apply border border-white px-2 py-2 rounded-lg">Sign up Now</button>
+        <button type="button" class="button-apply border border-white hover:bg-fuchsia-700 px-2 py-2 rounded-lg">Sign up
+          Now</button>
       </div>
     </div>
-    <header>
-      <nav>
-        <div class="logo">
-          <div class="img ">
-            <img src="./asset/Foodpanda-Logo.png" alt="foodpanda" height="40px" width="250px">
-            <button type="button" class="button-apply border border-red px-2 py-2 rounded-lg">Log in</button>
-            <button type="button" class="button-apply border border-red px-2 py-2 rounded-lg dark:md:hover:bg-fuchsia-600 ">Sign up</button>
+    <br>
+    <div class="navbar2">
+      <div class="">
+        <div class="bg-white flex space-y-2.5 scroll-px-0.5 ">
+          <div class="w-32 mr-auto">
+            <img src="./asset/Foodpanda-Logo.png" alt="foodpanda" height="0.5rem" width="300rem">
           </div>
-          
+          <div>
+            <button type="button"
+              class="button-apply border border-fuchsia-700 px-2 py-2 rounded-lg bg-fuchsia-300 hover:file:bg-fuchsia-700">Log
+              in</button>
+            <button type="button"
+              class="button-apply border border-fuchsia-700 px-2 py-2 rounded-lg bg-fuchsia-300 hover:file:bg-fuchsia-700"">Sign up</button>
+              <button type=" button"
+              class="button-apply border border-fuchsia-700 px-2 py-2 rounded-lg bg-fuchsia-300 hover:file:bg-fuchsia-700""><i class="
+              fa-solid fa-globe"></i>EN</button>
+            <button type="button"
+              class="button-apply border border-fuchsia-700 px-2 py-2 rounded-lg bg-fuchsia-300 hover:file:bg-fuchsia-700"">
+              <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
         </div>
-        <div class="btn">
-         
+      </div>
+    </div>
+    <!--section 1 -->
+    <section class="section1"> 
+      <div class=" bg-slate-50 relative grid grid-flow-row-dense grid-cols-2 grid-rows-2 max-h-96 p-10 ">
+        <div class="relative text-5xl">
+          <h1>It's the food and groceries you love, delivered</h1>
         </div>
-        <div class="icon"></div>
-      </nav>
-    </header>
+        <div class="">
+          <img src=" ./asset/refresh-hero-home-bd.png" alt="pande">
+        </div>
+        <div
+            class="bg-white absolute top-40 left-5  text-4xl rounded-lg border-separate border-2 px-2 py-2 rounded-lg shadow-md min-h-0">
+            <input class="relative rounded-lg border-separate border-2 text-lg border-slate-600 " type="text"
+              placeholder="Your street and street number ">
+            <button type="button"
+              class="button-apply border border-fuchsia-700 px-2 py-2 rounded-lg bg-fuchsia-500 hover:bg-sky-700 ">Find food</button>
+        </div>
+      </div>
+    </section>
+
+    <!--section 2 -->
+
+    <section class="section2 my-12 relative">
+      <div class="bds-text-global mx-8 textss my-8 text-5xl text-slate-800">
+            You prepare the food, we handle the rest
+      </div>
+      <div class="bgss h-[404px] overflow-hidden flex items-center">
+        <img class="" src="./asset/home-vendor-bd.jpg" alt="vendor">
+      </div>
+      <div class="block__grid w-full bottom-0 absolute" style="transform: translateY(40%);">
+          <div class="w-7/12 mx-12 bg-white rounded-lg p-3 shadow-2xl">
+              <div class="">
+                  <h1 class="text-3xl font-semibold">List your restaurant or shop on foodpanda</h1>
+                  <br>
+                  <p class="text-xl">Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+                  <br>
+                  <p class="text-xl">It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!</p>
+                  <br>
+                  <p class="text-xl">Interested? Let's start our partnership today!</p>
+              </div>
+              <div class="m-5">
+                  <a href="" class="border text-white bg-pink-600 border-pink-600 p-4 rounded-lg hover:border-4">
+                      <button type="button" class="button-apply text-2xl font-bold">Get started</button>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--section 3 -->
+
+<section class="section3 my-8">
+  <div class="pt-36">
+    <div class="bds-text-global mx-8">
+      <h1 class="text-5xl text-slate-800 ">
+        Find us in these cities and many more!</h1>
+    </div>
+    <div class=" mx-8 my-8  ">
+      <div class="grid grid-cols-3 gap-8 ">
+        <div class="bg-gray-200 rounded-2xl relative">
+            <div class="imgess">
+              <img class="rounded-2xl w-full h-80" src="./asset/city-title-Dhaka.jpg" alt="Dhaka">
+            </div>
+            <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+              <a class="text-xl text-slate-800 ">
+                <span>Dhaka</span>
+              </a>
+            </div>
+        </div>
+        <div class="bg-gray-200 rounded-2xl relative">
+          <div class="imgess">
+            <img class="rounded-2xl w-full h-80" src="./asset/city-title-Chittagong.jpg" alt="Chittagong">
+          </div>
+          <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+            <a class="text-xl text-slate-800 " href="#">
+              <span>Chittagong</span>
+            </a>
+          </div>
+      </div>
+      <div class="bg-gray-200 rounded-2xl relative">
+        <div class="imgess">
+          <img class="rounded-2xl w-full h-80" src="./asset/city-tile-Bagerhat.jpg" alt="Bagerhat">
+        </div>
+        <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+          <a class="text-xl text-slate-800 ">
+            <span>Bagerhat</span>
+          </a>
+        </div>
+    </div>
+    <div class="bg-gray-200 rounded-2xl relative">
+      <div class="imgess">
+        <img class="rounded-2xl w-full h-80" src="./asset/city-tile-Bandarban.jpg" alt="Bandarban">
+      </div>
+      <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+        <a class="text-xl text-slate-800 ">
+          <span>Bandarban</span>
+        </a>
+      </div>
   </div>
+  <div class="bg-gray-200 rounded-2xl relative">
+    <div class="imgess">
+      <img class="rounded-2xl w-full h-80" src="./asset/city-tile-Barguna.jpg" alt="Barguna">
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+      <a class="text-xl text-slate-800 ">
+        <span>Barguna</span>
+      </a>
+    </div>
+</div>
+<div class="bg-gray-200 rounded-2xl relative">
+  <div class="imgess">
+    <img class="rounded-2xl w-full h-80" src="./asset/city-tile-Barisal.jpg" alt="Barisal">
+  </div>
+  <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+    <a class="text-xl text-slate-800 ">
+      <span>Barisal</span>
+    </a>
+  </div>
+</div>
+<div class="bg-gray-200 rounded-2xl relative">
+  <div class="imgess">
+    <img class="rounded-2xl w-full h-80" src="./asset/city-tile-Bhola.jpg" alt="Bhola">
+  </div>
+  <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+    <a class="text-xl text-slate-800 ">
+      <span>Bhola</span>
+    </a>
+  </div>
+</div>
+<div class="bg-gray-200 rounded-2xl relative">
+  <div class="imgess">
+    <img class="rounded-2xl w-full h-80" src="./asset/city-tile-Bogra.jpg" alt="Bogra">
+  </div>
+  <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+    <a class="text-xl text-slate-800 ">
+      <span>Bogra</span>
+    </a>
+  </div>
+</div>
+<div class="bg-gray-200 rounded-2xl relative">
+  <div class="imgess">
+    <img class="rounded-2xl w-full h-80" src="./asset/city-tile-Brahmanbaria.jpg" alt="Brahmanbaria">
+  </div>
+  <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+    <a class="text-xl text-slate-800 ">
+      <span>Brahmanbaria</span>
+    </a>
+  </div>
+</div>
+<div class="bg-gray-200 rounded-2xl relative">
+  <div class="imgess">
+    <img class="rounded-2xl w-full h-80" src="./asset/city-tile-Chandpur.jpg" alt="Chandpur">
+  </div>
+  <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+    <a class="text-xl text-slate-800 ">
+      <span>Chandpur</span>
+    </a>
+  </div>
+</div>
+<div class="bg-gray-200 rounded-2xl relative">
+  <div class="imgess">
+    <img class="rounded-2xl w-full h-80" src="./asset/" alt="Dhaka">
+  </div>
+  <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+    <a class="text-xl text-slate-800 ">
+      <span>Dhaka</span>
+    </a>
+  </div>
+</div>
+<div class="bg-gray-200 rounded-2xl relative">
+  <div class="imgess">
+    <img class="rounded-2xl w-full h-80" src="./asset/city-title-Dhaka.jpg" alt="Dhaka">
+  </div>
+  <div class="absolute bottom-2.5 left-2.5 px-4 py-2 bg-white rounded-2xl cursor-pointer">
+    <a class="text-xl text-slate-800 ">
+      <span>Dhaka</span>
+    </a>
+  </div>
+</div>
+</div>
+</section>
+<br>
+<!--section-4-->
+<section class="relative">
+  <div class="bds-text-global mx-8 textss my-8 text-3xl text-slate-800">Put us in your pocket</div><br>
+  <div class=" bg-rose-500 relative grid-cols-2 h-80 rounded-2xl left-5 right-5">
+    <div class=" absolute text-2xl text-white top-10 left-8" >
+      <h1>Download the food and groceries you love</h1>
+    </div>
+    <div>
+      <img class="absolute border border-white rounded-lg w-20 h-20 p-2 top-24 left-5 " src="./asset/bdhomepageqrcode.png" alt="pageqrcode">
+    </div>
+    <div class="absolute w-80 h-5 text-white top-24 left-28">
+      <p>It's all at your fingertips – the restaurants and shops you love. Find the right food and groceries to suit your mood, and make the first bite last. Go ahead, download us.</p>
+    </div>
+    <div class="absolute  rounded-lg p-4 mx-7 my-2 grid grid-cols-3 gap-5 bottom-5 left-3 ">
+      <img class=" w-28 h-10 border border-white rounded-lg" src="./asset/app-store.png" alt="app-store">
+      <img class="w-28 h-10 border border-white rounded-lg " src="./asset/play-store.png" alt="play-store">
+      <img class="w-28 h-10 border border-white rounded-lg" src="./asset/appgallary.png" alt="app-gallery">
+    </div>
+    <div class="absolute w-[50%] h-80 right-10 bottom-20">
+      <img class="" src="./asset/home-foodpanda-apps.png" alt="">
+    </div>
+  </div>
+</section>
+
+<!--section-5-->
+
+<section class=" relative"><br><br>
+  <div>
+  <div class=" mx-8 my-8 text-3xl text-slate-800">
+    <h1>Take your office out to lunch</h1>
+  </div>
+  <div class="h-[415px] overflow-hidden flex items-center">
+    <img class="" src="./asset/home-corporate-bd.jpg" alt="home-corporate">
+  </div>
+  <div class=" absolute bg-white  w- h-60 border rounded-lg shadow-2xl left-20 -bottom-28 p-10">
+    <h1 class="text-3xl font-semibold">foodpanda for business</h1><br>
+    <p>Order lunch or fuel for work-from-home, late nights in the office, corporate events, client <br>meetings, and much more.</p>
+    <br>
+    <a href="#" class="border text-white bg-pink-600 border-pink-600 p-4 rounded-lg hover:border-4 left-0 bottom-2">
+        <button type="button" class="button-apply text-2xl font-bold">Get started</button>
+    </a>
+  </div>
+</div>
+</section><br><br><Br><Br><br><br><Br><Br>
+
+<!--section-6-->
+<section >
+  <div class=" mx-14 my-9 left-5">
+  <h1 class="text-2xl left-5 ">Order food from the best restaurants and shops with foodpanda Bangladesh</h1><br>
+  <p>Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then foodpanda Bangladesh is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your everyday easier. Our online food delivery service has it all, whether you fancy a juicy burger from Takeout, fresh sushi from Samdado or peri peri chicken from Nando's, foodpanda Bangladesh has over 2000 restaurants available from Dhaka to Chittagong through to Sylhet. Did you know you can order your groceries and more from foodpanda, too? Check out foodpanda shops for favourite partners like Unimart, Suborno, Shwapno, Bengal Meat, and much more. Sit back and relax – let foodpanda Bangladesh take the pressure off your shoulders.</p><br>
+  <p class="mx-5 p-3 hover:bg-slate-300">Click Here to Read More</p>
+</div>
+</section><Br><br><br><Br><Br>
+
+<!--section-6-->
+<section>
+  <div class="mx-14 my-10 border-t-2 border-b-2 gray-400 forced-color-adjust-auto ">
+    <div class="flex ">
+      <img class=" w-28 h-20" src="./asset/Foodpanda-Logo.png" alt="Foodpanda">
+      <span class=" "></span>
+      <img class="w-28 h-20" src="./asset/Delivery-Hero.png" alt="Delivery-Hero">
+      <div class="m-5 float-right">
+        <a href="" class="border text-gray-400 bg-white border-gray-300 p-4 rounded-full hover:border-4">
+            <button type="button" class="button-apply text-2xl font-bold">
+              <img class="w-5 h-5 " src="./asset/facebook.png" alt="facebook">
+            </button>
+        </a>
+        <a href="" class="border text-gray-400 bg-white border-gray-300 p-4 rounded-full hover:border-4">
+          <button type="button" class="button-apply text-2xl font-bold">
+            <img class="w-5 h-5 " src="./asset/instragram.png" alt="instragram">
+          </button>
+      </a>
+        
+    </div>
+    </div>
+  </div>
+</section>
+
+<!--section-6-->
+
+<section>
+  <div class=" relative flex mx-7 my-2 grid grid-cols-4 gap-6 text-gray-400 ">
+      <div class="  w-28 h-10">
+        <ul>
+            <li>
+              <a href="#">© 2024 foodpanda</a> 
+            </li>
+          </ul>
+        </div>
+        <div class=" left-72  ">
+          <ul>
+            <li>
+              <a href="#">Press</a> 
+            </li>
+            <li>
+              <a href="#">Help Center</a> 
+            </li>
+            <li>
+              <a href="#">Help CenterTerms and conditions</a> 
+            </li>
+            <li>
+              <a href="#">Privacy policy</a> 
+            </li>
+            <li>
+              <a href="#">Refund Account Terms & Conditions</a> 
+            </li>
+            <li>
+              <a href="#">Cashback Program</a> 
+            </li>
+            <li>
+              <a href="#">Pandapro Subscription</a> 
+            </li>
+          </ul>
+        </div>
+        <div class=" right-72">
+          <ul>
+            <li>
+              <a href="#"> Dine-in</a> 
+            </li>
+            <li>
+              <a href="#">Security</a> 
+            </li>
+            <li>
+              <a href="#">Partner with us</a> 
+            </li>
+            <li>
+              <a href="#">How foodpanda works</a> 
+            </li>
+            <li>
+              <a href="#">Download foodpanda Apps</a> 
+            </li>
+            <li>
+              <a href="#">Careers</a> 
+            </li>
+            <li>
+              <a href="#">Corporate Customer</a> 
+            </li>
+          </ul>
+        </div>
+        <div class=" right-5">
+          <ul>
+            <li>
+              <a href="#"> pandago for business</a> 
+            </li>
+            <li>
+              <a href="#"> pandago for customers</a> 
+            </li>
+            <li>
+              <a href="#">foodpanda Deals</a> 
+            </li>
+            <li>
+              <a href="#"> Grocery delivery</a> 
+            </li>
+            <li>
+              <a href="#">Become an affiliate</a> 
+            </li>
+            <li>
+              <a href="#"> All cities </a> 
+            </li>
+            <li>
+              <a href="#">Ramadan delivery</a> 
+            </li>
+          </ul>
+        </div>
+      </div><br>
+  
+</section>
+<!--footer-->
+<section class="text-gray-400">
+  <div class=" bottom-2 border-t-2 left-10 gray-400 forced-color-adjust-auto p-5 space-x-5 -space-x-5">
+      <a href="#">Myanmar </a><span>|</span>
+      <a href="#"> Laos</a><span>|</span> 
+      <a href="#"> Hong Kong</a><span>|</span> 
+      <a href="#"> Pakistan</a><span>|</span> 
+      <a href="#"> Singapore </a><span>|</span>
+      <a href="#">  Malaysia</a><span>|</span>
+      <a href="#"> Philippines </a><span>|</span>
+      <a href="#"> Thailand</a><span>|</span>
+      <a href="#"> Taiwan</a><span>|</span>
+      <a href="#"> Cambodia</a>
+  </div><br><br><br><br><br>
+</section>
+<div class="text-gray-200 left-10 p-6 ">
+  <address>Abdur Rahim<br>Web design and developer<br>email:maple.rahim1@gmail.com<br>Rajshahi, Bangladesh
+
+  </address>
+</div>
+</div>
 </body>
 
 </html>
